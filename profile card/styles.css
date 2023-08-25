@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+/* CSS for responsiveness start*/
+@media screen and (max-width: 480px) {
+  .box{
+      width: 100vw;
+      border-radius: 0px;
+  }
+  .button{
+      display: flex;
+      flex-direction: column;
+  }
+  .button button{
+      width: 250px;
+  }
+  button.connect{
+      margin-top: 10px;
+  }
+  .content2{
+      padding: 0px 20px;
+  }
+  .content2 img{
+      width: 60px;
+      height: 60px;
+  }
+}
+/* CSS for responsiveness end*/
+
+/* main body css start*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --green: #58a497;
+  --yellow: #e09449;
+  --lightgreen1: #a4bdb7;
+  --brown: #8b4448;
+  --gray: gray;
+  --lightgreen2: rgb(164, 189, 183, 0.5);
+  --box: #ededed;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background: #a4bdb7;
+}
+
+.box {
+  width: 350px;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  background: #ededed;
+}
+
+.box1 {
+  margin-top: 10px;
+}
+
+.content {
+  margin: 15px 2px;
+}
+
+.image img {
+  height: 125px;
+  width: 105px;
+  border-radius: 50%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.level {
+  font-size: 0.7em;
+  background-color: rgb(164, 189, 183, 0.5);
+  width: 50px;
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+
+  display: block;
+  margin: 0px auto 10px;
+}
+
+.name {
+  font-size: 1.25em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.job_title {
+  font-size: 0.65em;
+  font-weight: bolder;
+  color: gray;
+  margin-top: -2px;
+}
+
+.job_discription {
+  font-size: 0.7em;
+  color: gray;
+  margin: 10px 30px 20px;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 2px;
+  width:12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+.fa-facebook {
+  background:  #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background:#007bb5 ;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+.fa-facebook:hover{
+  color: #58a497;
+  transition: 0.5s;
+}
+.fa-linkedin:hover{
+  color: #58a497;
+  transition: 0.5s;
+}
+.fa-twitter:hover{
+  color: #58a497;
+  transition: 0.5s;
+}
+.fa-instagram:hover{
+  color: #58a497;
+  transition: 0.5s;
+}
+.fa-github:hover{
+  color:#58a497;
+  transition: 0.5s;
+}
+button {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 20px 30px 0px;
+}
+
+.button .message {
+  background: #ededed;
+  border: 2px solid #000;
+}
+
+.button .connect {
+  background-color: #000;
+  color: #ededed;
+  border: none;
+}
+button.connect:hover {
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+button.message:hover {
+  letter-spacing: 1px;
+  transition: 0.5s;
+  background: rgba(88, 164, 151, 0.5);
+}
+
+.profile-card {
+  width: 300px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color:rgb(248, 226, 198);
+  cursor: pointer;
+}
+
+.profile-card h2, .profile-card p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.profile-card #contact-info {
+  margin-top: 20px;
+
+}
+.hidden {
+  display: none;
+}
+/*main body css end*/

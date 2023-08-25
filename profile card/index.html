@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <section>
+    <div class="box1 box">
+        <div class="content">
+            <div class="image">
+        <img src="profile img.jpg" alt="profile image"></div>
+        <div class="level1">
+        <p>PROFILE</p>
+        </div>
+        <div class="text">
+        <p class="name">Divyanshu Saini</p>
+        <p class="job_title">Web developer/cyber security student</p>
+        <p class="job_discription">I am Front-end Webdeveloper i have good experience in front end designing using html,css,javascript and react framework and also i am very enthusiast in cyber security field i like to solve CTFs and hacking machines in different platforms like tryhackme ,I have goood skill of communications like speaking,listening,reading.</p>
+    </div>
+    <div class="icons">
+      <a href="https://www.facebook.com/Divu0426" class="fa fa-facebook"></a>
+      <a href="https://in.linkedin.com/in/divyanshu-saini-95875a232" class="fa fa-linkedin"></a>
+      <a href="https://instagram.com/_divuu.saini_?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
+      <a href="https://github.com/Divu-Saini" class="fa fa-github"></a>
+      </div>
+      <div class="profile-card">
+        <img src="image1.png" alt="logo" width="50px" height="50px">
+        <h2  id="contact-button">Contact</h2>
+        <div id="contact-info">
+          <p>Email: sainidivyanshu2601@gmail.com</p>
+          <p>Phone: +917351548911</p>
+          <p>Address: Saharanpur, Uttar Pradesh, INDIA</p>
+        </div>
+    </div>
+      <div class="button">
+        <div>
+          <button class="message">  <a href="mailto:sainidivyanshu2601@gmail.com">Message</button>
+        </div>
+        <div>
+          <button class="connect" type="button"   >Connect</button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    </section>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("contact-button").addEventListener("click", function() {
+        var contactInfo = document.getElementById("contact-info");
+        if (contactInfo.style.display === "none") {
+          contactInfo.style.display = "block";
+        } else {
+          contactInfo.style.display = "none";
+        }
+      });
+    });
+  </script>
+</html>
