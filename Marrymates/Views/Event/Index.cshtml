@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MarryMatesDotNet.Models.Event>
+
+@{
+    ViewData["Title"] = "Events";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Event ID</th>
+            <th>Client Name</th>
+            <th>Vendor Name</th>
+            <th>Venue Name</th>
+            <th>Event Date</th>
+            <th>Total Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EventId</td>
+                <td>@item.Client.Name</td>
+                <td>@item.Vendor.Name</td>
+                <td>@item.Venue.VenueName</td>
+                <td>@item.EventDate.ToString("d")</td>
+                <td>@item.TotalPrice.ToString("C")</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.EventId })" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = item.EventId })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create")" class="btn btn-success">Create New Event</a>
