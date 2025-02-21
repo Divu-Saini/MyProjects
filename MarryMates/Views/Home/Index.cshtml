@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container-fluid p-0">
+
+   
+    <header class="hero-section" style="background-image: url('/images/newback.jpg'); background-size: cover;">
+        @* background-position: center; height: 100vh;" *@
+        <div class="hero-text text-center py-5" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+            <h1>MarryMates</h1>
+            <h2>Mumbai-based wedding planners</h2>
+            <p class="lead">
+                Welcome to MarryMates. <br />We are a full-service wedding planning company in Bandra, Mumbai, specializing in unique and memorable events.
+            </p>
+            <a href="/Services" class="btn btn-warning btn-lg mt-3">Explore Our Services</a>
+        </div>
+    </header>
+
+    <hr />
+
+    
+    <main class="container">
+        <section id="features" class="my-5 text-center">
+
+            <h3>Why Choose Us?</h3>
+            <div class="row mt-4">
+              
+                <div class="col-md-4">
+                    <i class="bi bi-heart-fill text-danger display-4"></i>
+                    <h4>Personalized Planning</h4>
+                    <p>Every wedding is uniquely crafted to reflect your love story.</p>
+                    <a href="http://localhost:5081/Event" class="btn btn-primary mt-3">
+                        <i class="bi bi-send me-2"></i> Start Planning
+                    </a>
+                </div>
+
+               
+                <div class="col-md-4">
+                    <i class="bi bi-geo-alt-fill text-primary display-4"></i>
+                    <h4>Perfect Venues</h4>
+                    <p>Stunning venues tailored to your dream wedding.<br />Select your magical place!</p>
+                    <a href="/venues" class="btn btn-primary mt-3">
+                        <i class="bi bi-globe-central-south-asia me-2"></i> Explore Venues
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="bi bi-stars text-warning display-4"></i>
+                    <h4>Memorable Experiences</h4>
+                    <p>Create lasting memories with seamless execution.<br />Explore our curated Experiences!</p>
+                    <a href="http://localhost:5081/Home/About" class="btn btn-primary mt-3">
+                        <i class="bi bi-chat-heart-fill me-2"></i> About Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section id="testimonials" class="my-5">
+            <h3 class="text-center">What Our Clients Say</h3>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p>"MarryMates made our day magical! Everything was perfect."</p>
+                            <footer class="blockquote-footer">Anjali & Harish</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p>"MarryMates team exceeded our expectations. Highly recommend them!"</p>
+                            <footer class="blockquote-footer">Sonia & Rajesh</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p>
+                                "Working with MarryMates was an absolute pleasure from start to finish.
+                                They brought our wedding vision to life and exceeded our expectations in every way possible."
+                            </p>
+                            <footer class="blockquote-footer">Chitra Padival (Bride's Mother)</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p>
+                                "Divya & Vithika were the real stars of the show.
+                                The team went above and beyond to make sure everything was perfect."
+                            </p>
+                            <footer class="blockquote-footer">Chakra Sai (Groom)</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <hr />
+
+     
+        <section class="parallax text-center text-white py-5" style="background-image: url('/images/parallax.jpg')">
+            <h3>Your Dream Wedding Awaits</h3>
+            <h4>Make sure to book your wedding planner today!</h4>
+        </section>
+    </main>
+</div>

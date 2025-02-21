@@ -1,0 +1,116 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+   
+    <div style="background-image: url('/images/hero-bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: black; min-height: 400px;">
+        <div class="container">
+            <h1 class="display-4">Our Wedding Services</h1>
+            <p class="lead">Let us bring your dream wedding to life with elegance and style.</p>
+            <a class="btn btn-light mt-3" href="#services">Explore Our Services</a>
+        </div>
+    </div>
+
+  
+    <div class="container my-5" id="services">
+        <h2 class="text-center mb-4">What We Offer</h2>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card service-card">
+                    <img class="card-img-top" src="/images/weddings.jpg" alt="Weddings">
+                    <div class="card-body">
+                        <h5 class="card-title">Weddings</h5>
+                        <p class="card-text">Full wedding planning services tailored to your love story, from venue selection to stunning décor.</p>
+                        <a class="btn btn-primary hover-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card service-card">
+                    <img class="card-img-top" src="/images/extra-touches.jpg" alt="Extra Touches">
+                    <div class="card-body">
+                        <h5 class="card-title">Extra Touches</h5>
+                        <p class="card-text">Enhance your wedding with catering, cakes, photography, and personalized décor items.</p>
+                        <a class="btn btn-primary hover-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card service-card">
+                    <img class="card-img-top" src="/images/entertainment.jpg" alt="Entertainment">
+                    <div class="card-body">
+                        <h5 class="card-title">Music & Entertainment</h5>
+                        <p class="card-text">Create a lively atmosphere with DJs, live bands, fireworks, and photo booths.</p>
+                        <a class="btn btn-primary hover-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card service-card">
+                    <img class="card-img-top" src="/images/other-events.jpg" alt="Other Events">
+                    <div class="card-body">
+                        <h5 class="card-title">Other Events</h5>
+                        <p class="card-text">From christenings to corporate events, we cater to all kinds of celebrations with excellence.</p>
+                        <a class="btn btn-primary hover-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Additional Services</h2>
+        <div id="additionalServicesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="card service-card">
+                                <img class="card-img-top" src="/images/wedding-films.jpg" alt="Wedding Films">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wedding Films</h5>
+                                    <p class="card-text">Capture every moment of your wedding with stunning wedding films, preserving memories for a lifetime.</p>
+                                    <a class="btn btn-primary hover-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card service-card">
+                                <img class="card-img-top" src="/images/entertainment-setups.jpg" alt="Entertainment Setups">
+                                <div class="card-body">
+                                    <h5 class="card-title">Entertainment Setups</h5>
+                                    <p class="card-text">Make your wedding memorable with exciting entertainment setups like live music, DJs, and photo booths.</p>
+                                    <a class="btn btn-primary hover-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#additionalServicesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#additionalServicesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center py-5" style="background: #f8f9fa;">
+        <h2>Ready to Plan Your Dream Wedding?</h2>
+        <p>Contact us now to get started on your magical journey.</p>
+        <a class="btn btn-success hover-btn" href="https://wa.me/7887933155">Chat with Us</a>
+    </div>
+</div>
